@@ -25,12 +25,19 @@ Windows路徑行中最好不要有空格，就是不要放在"Program Files"等�
 ```
 docker-compose up -d
 ```
+因為版本差異，有時可能要打 
+```
+docker-compose.exe up -d
+```
 
 想要結束時，打指令
 ```
 docker-compose down
 ```
-
+或
+```
+docker-compose.exe down
+```
 
 ## 串流上載
 成開跑起docker-compose後，使用obs可以進行上傳
