@@ -1,7 +1,7 @@
 # docker command
 ## start server command
 ```
-docker run -d -p 8080:8080 --name sls rtainjapan/srt-live-server:master
+docker run -d -p 8080:8080/udp --name sls rtainjapan/srt-live-server:master
 ```
 
 ## stop and remove server command
