@@ -60,3 +60,15 @@ test1
 ```
 rtmp://127.0.0.1:1935/live/test1
 ```
+
+## ffmpeg testing command
+```
+ffmpeg -loglevel verbose -re -i movie.avi  -vcodec libx264 \
+  -vprofile baseline -acodec libmp3lame -ar 44100 -ac 1 \
+  -f flv rtmp://localhost:1935/live/test
+ffmpeg -f image2 -loop 1 -i http://test.dev/overlay.jpg \
+  -f flv rtmp://localhost:1935/live/test
+```
+
+## reference
+https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/
