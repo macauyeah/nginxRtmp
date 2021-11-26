@@ -44,21 +44,25 @@ docker-compose.exe down
 
 server: rtmp://伺服器IP:1935/live
 
-stream key: 隨便你
+stream key: test (若使用不同stream key, 就要同步修改video player裏的值)
 
 若Server在家中，server就是可以用
 ```
 rtmp://127.0.0.1:1935/live
 ```
-stream key 隨便給一個
+stream key
 ```
-test1
+test
 ```
 
 ## 串流下載
 如果上載成功的話，可以使用VLC或者OBS，讀取剛剛的位置，但格式會變成
 ```
-rtmp://127.0.0.1:1935/live/test1
+rtmp://127.0.0.1:1935/live/test
+```
+網頁版直接觀看
+```
+http://127.0.0.1:8086/
 ```
 
 ## ffmpeg testing command
